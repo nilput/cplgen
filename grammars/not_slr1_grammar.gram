@@ -1,0 +1,8 @@
+#this grammar is unambigious
+#yet it is not slr(1)
+#the generator cant deal with it
+_START -> S _END
+S -> L '=' R
+  | R
+L -> '*' R | T_id
+R -> L

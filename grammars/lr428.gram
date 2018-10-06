@@ -1,0 +1,6 @@
+_START -> E _END
+E -> T EP
+EP -> '+' T EP | _EPSILON
+T -> F TP
+TP -> '*' F TP | _EPSILON
+F -> '(' E ')' | T_id

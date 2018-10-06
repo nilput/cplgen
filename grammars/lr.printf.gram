@@ -1,0 +1,17 @@
+_START -> P _END
+P -> E{
+    printf("P -> E\n");
+}
+E -> E '+' T  {
+    printf("E -> E '+' T\n");
+}
+E -> T {
+    printf("E -> T\n");
+}
+T -> T '*' F {
+    printf("T -> T '*' F \n");
+}
+T -> F {
+    printf("T -> F\n");
+}
+F -> '(' E ')' | T_id | '1' | '2' | '3'

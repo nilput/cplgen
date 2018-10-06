@@ -1,0 +1,7 @@
+_START -> E _END
+E -> E '+' T
+E -> T
+T -> T '*' F
+T -> F
+F -> '(' E ')'
+F -> 'x'

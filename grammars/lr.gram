@@ -1,0 +1,5 @@
+_START -> P _END
+P -> E
+E -> E '+' T | T
+T -> T '*' F | F
+F -> '(' E ')' | T_id

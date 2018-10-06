@@ -1,0 +1,10 @@
+this is a work in progress, if you find bugs and you will, please report them :)
+
+currently unsupported features:
+    external actual lexer
+    more advanced grammars than slr (planning to eventually support lalr)
+    matching literals with more than 1 char (this is trivial)
+
+*peacfully deal with unsupported grammars
+    currently undefined things happen, undefined as in infinite loops or errors
+    but an unsupported grammar should not be accepted :)

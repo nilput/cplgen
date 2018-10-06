@@ -1,0 +1,8 @@
+currently there are two source files to deal with:
+    lrgen.py: 
+        this is does more abstract things like parsing the input grammar and generating a table
+        you can use it like this:
+        lrgen.py -v --in<grammar_file>
+        to get the states table
+    generate_slr_c.py: 
+        this generates a C implementation of a parser, see the arithmetic example

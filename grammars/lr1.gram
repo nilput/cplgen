@@ -1,0 +1,6 @@
+_START -> N _END
+N -> V '=' E
+N -> E 
+E -> V
+V -> 'x'
+   | '*' E
